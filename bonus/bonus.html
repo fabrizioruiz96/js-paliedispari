@@ -19,24 +19,26 @@
             </div>
         </nav>
 
-        <main class="container py-4 text-center">
+        <main class="container mt-5 text-center">
             <div>
                 <h4>E' Palindroma ...?</h4>
-                <form action="" method="get">
+                <form action="" method="get" class="needs-validation" novalidate>
                     <div class="w-50 mb-3 container-fluid justify-content-center">
-                        <input type="text" class="form-control" id="inputWord" placeholder="Inserisci una parola per verificare se è palindroma...">
+                        <input type="text" class="form-control" id="inputWord" placeholder="Inserisci una parola per verificare se è palindroma..." required>
+                        <div class="invalid-feedback">Inserisci una parola per favore!</div>
                     </div>
-                    <div class="mb-3">
-                        <button type="submit" class="btn btn-primary">Verifica</button>
+                    <div>
+                        <button type="submit" class="btn btn-primary mb-3" id="palindromeSubmit">Verifica</button>
                     </div>
                 </form>
+                <p id="palindromeResultArea"></p>
             </div>
 
-            <div class="container">
+            <div class="container mt-5">
                 <h4>Pari o Dispari</h4>
-                <form action="" method="get">
+                <form action="" method="get" class="needs-validation" novalidate>
                     <div class="w-50 mb-3 container-fluid justify-content-center">
-                        <select class="form-select">
+                        <select class="form-select" id="userChoise">
                             <option value="odd">Pari</option>
                             <option value="even">Dispari</option>
                         </select>
